@@ -1,19 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using AdvertApi.Models;
 using AdvertApi.Models.Messages;
 using AdvertApi.Services;
 using Amazon.SimpleNotificationService;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace AdvertApi.Controllers
 {
     [ApiController]
-    [Route("adverts/v1")]
+    [Route("api/v1/adverts")]
     [Produces("application/json")]
     public class AdvertController : ControllerBase
     {

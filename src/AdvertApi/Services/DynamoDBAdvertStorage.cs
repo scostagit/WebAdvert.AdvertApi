@@ -20,6 +20,8 @@ namespace AdvertApi.Services
 
         public async Task<string> AddAsync(AdvertModel model)
         {
+            //Real work, we should put some validation here.
+
             var dbModel = _mapper.Map<AdvertDbModel>(model);
 
             dbModel.Id = Guid.NewGuid().ToString();
